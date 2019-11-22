@@ -14,16 +14,8 @@ function App() {
           <NavBar />
           <div className="container">
             <Switch>
-              <Route
-                exact
-                path="https://florxgomez.github.io/lyrics-finder/"
-                component={Index}
-              />
-              <Route
-                exact
-                path="https://florxgomez.github.io/lyrics-finder/lyrics/track/:id"
-                component={Lyrics}
-              />
+              <Route exact path="/" component={Index} />
+              <Route exact path="lyrics/track/:id" component={Lyrics} />
             </Switch>
           </div>
         </Fragment>
