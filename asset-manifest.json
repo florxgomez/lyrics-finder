@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lyrics-finder/static/css/main.1cda5295.chunk.css",
-    "main.js": "/lyrics-finder/static/js/main.16dea8d3.chunk.js",
-    "main.js.map": "/lyrics-finder/static/js/main.16dea8d3.chunk.js.map",
+    "main.js": "/lyrics-finder/static/js/main.22e78bbd.chunk.js",
+    "main.js.map": "/lyrics-finder/static/js/main.22e78bbd.chunk.js.map",
     "runtime-main.js": "/lyrics-finder/static/js/runtime-main.2996c753.js",
     "runtime-main.js.map": "/lyrics-finder/static/js/runtime-main.2996c753.js.map",
     "static/js/2.6834819d.chunk.js": "/lyrics-finder/static/js/2.6834819d.chunk.js",
     "static/js/2.6834819d.chunk.js.map": "/lyrics-finder/static/js/2.6834819d.chunk.js.map",
     "index.html": "/lyrics-finder/index.html",
-    "precache-manifest.dba8acbbf5233393463dbafd2a33b0d8.js": "/lyrics-finder/precache-manifest.dba8acbbf5233393463dbafd2a33b0d8.js",
+    "precache-manifest.28dcc75a5e7bfd3a6fcf729c517e82a6.js": "/lyrics-finder/precache-manifest.28dcc75a5e7bfd3a6fcf729c517e82a6.js",
     "service-worker.js": "/lyrics-finder/service-worker.js",
     "static/css/main.1cda5295.chunk.css.map": "/lyrics-finder/static/css/main.1cda5295.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.2996c753.js",
     "static/js/2.6834819d.chunk.js",
     "static/css/main.1cda5295.chunk.css",
-    "static/js/main.16dea8d3.chunk.js"
+    "static/js/main.22e78bbd.chunk.js"
   ]
 }
