@@ -33,7 +33,7 @@ class Lyrics extends Component {
 
   renderGender = track => {
     if (track.primary_genres.music_genre_list[0] === undefined) {
-      return <div>Genre not found</div>;
+      return "Genre not available";
     } else {
       return track.primary_genres.music_genre_list[0].music_genre
         .music_genre_name;
