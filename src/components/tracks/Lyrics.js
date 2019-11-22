@@ -24,7 +24,7 @@ class Lyrics extends Component {
           `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
         );
       })
-      .then(res => {
+      /*.then(res => {
         this.setState({
           track: res.data.message.body.track
         });
@@ -36,7 +36,7 @@ class Lyrics extends Component {
         this.setState({
           albumName: res.data.message.body.album.album_name
         })
-      })
+      })*/
       .catch(err => console.log(err));
   }
 
@@ -68,7 +68,7 @@ class Lyrics extends Component {
           <ul className="my-group list-group mt-3">
             <li className="my-list list-group-item">
               <strong className="my-sub-title">Album Name: </strong>
-              {albumName}
+              {"flor"}
             </li>
             <li className="my-list list-group-item">
               <strong className="my-sub-title" >Song Genre: </strong>
