@@ -9,13 +9,21 @@ import './App.css';
 function App() {
   return (
     <Provider>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Fragment>
           <NavBar />
           <div className="container">
             <Switch>
-              <Route exact path="/" component={Index} />
-              <Route exact path="/lyrics/track/:id" component={Lyrics} />
+              <Route
+                exact
+                path="https://florxgomez.github.io/lyrics-finder/"
+                component={Index}
+              />
+              <Route
+                exact
+                path="https://florxgomez.github.io/lyrics-finder/lyrics/track/:id"
+                component={Lyrics}
+              />
             </Switch>
           </div>
         </Fragment>
