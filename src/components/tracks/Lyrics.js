@@ -33,7 +33,7 @@ class Lyrics extends Component {
 
   renderGender = track => {
     if (track.primary_genres.music_genre_list[0] === undefined) {
-      return "Genre not available";
+      return 'Genre not available';
     } else {
       return track.primary_genres.music_genre_list[0].music_genre
         .music_genre_name;
@@ -42,7 +42,6 @@ class Lyrics extends Component {
 
   render() {
     const { track, lyrics } = this.state;
-    console.log(track, lyrics);
     if (
       track === undefined ||
       lyrics === undefined ||
