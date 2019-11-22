@@ -52,10 +52,10 @@ class Lyrics extends Component {
     } else {
       return (
         <React.Fragment>
-          <Link to="/" className="btn btn-dark btn-sm mb-4">
+          <Link to="/" className="my-btn-lyrics btn btn-dark btn-sm mb-4">
             Go Back
           </Link>
-          <div className="card">
+          <div className="my-lyrics-card card">
             <h5 className="card-header">
               {track.track_name} by{' '}
               <span className="text-secondary">{track.artist_name}</span>
@@ -65,24 +65,24 @@ class Lyrics extends Component {
             </div>
           </div>
 
-          <ul className="list-group mt-3">
-            <li className="list-group-item">
-              <strong>Album Name: </strong>
+          <ul className="my-group list-group mt-3">
+            <li className="my-list list-group-item">
+              <strong className="my-sub-title">Album Name: </strong>
               {albumName}
             </li>
-            <li className="list-group-item">
-              <strong>Song Genre: </strong>
+            <li className="my-list list-group-item">
+              <strong className="my-sub-title" >Song Genre: </strong>
               {
                 track.primary_genres.music_genre_list[0].music_genre
                   .music_genre_name
               }
             </li>
-            <li className="list-group-item">
-              <strong>Explicit Words: </strong>
+            <li className="my-list list-group-item">
+              <strong className="my-sub-title">Explicit Words: </strong>
               {track.explicit === 0 ? 'No' : 'Yes'}
             </li>
-            <li className="list-group-item">
-              <strong>Release Date: </strong>
+            <li className="my-list list-group-item">
+              <strong className="my-sub-title">Release Date: </strong>
               <Moment format="MMM DD YYYY">{track.first_release_date}</Moment>
             </li>
           </ul>

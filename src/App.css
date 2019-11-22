@@ -1,0 +1,63 @@
+body {
+  background-color: #fff;
+  font-family: 'Kulim Park', sans-serif;
+}
+
+.my-navbar {
+  background-color: #F67B93;
+}
+
+.my-brand {
+  font-family: 'Advent Pro';
+  font-size: 32px;
+  font-weight: 400;
+  color: #eee;
+  letter-spacing: 0px;
+}
+
+.my-brand-2 {
+  margin-left: 20px;
+}
+
+.my-card {
+  color: #472b62;
+  border: 0;
+  line-height: 2em;
+  text-align: center;
+}
+
+.my-track-card {
+  border: 0.5px solid #ddd;
+}
+
+.my-lyrics-card {
+  background-color: #fff;
+  color: #393e46;
+  height: 40%;
+  border: 0;
+  line-height: 2em;
+  text-align: center;
+}
+
+.my-btn {
+  background-color: #CB71A1;
+  color: #fff;
+}
+
+.my-btn-lyrics {
+  background-color: #472b62;
+}
+
+.my-list{
+  border: 0.5px solid #ddd;
+}
+
+.my-group {
+  width: 60%;
+  margin: 0 auto;
+  border: 0;
+}
+
+.my-sub-title {
+  color: #472b62;
+}
