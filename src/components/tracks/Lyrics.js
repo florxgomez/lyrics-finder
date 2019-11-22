@@ -7,8 +7,7 @@ import Moment from 'react-moment';
 class Lyrics extends Component {
   state = {
     track: {},
-    lyrics: {},
-    albumName: ''
+    lyrics: {}
   };
 
   componentDidMount() {
@@ -28,20 +27,22 @@ class Lyrics extends Component {
         this.setState({
           track: res.data.message.body.track
         });
-        return axios.get(
-          `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/album.get?album_id=${this.state.track.album_id}&apikey=${process.env.REACT_APP_MM_KEY}`
-        );
-      })
-      .then(res => {
-        this.setState({
-          albumName: res.data.message.body.album.album_name
-        })
       })
       .catch(err => console.log(err));
   }
 
+  renderGender = track => {
+    if (track.primary_genres.music_genre_list[0] === undefined) {
+      return <div>Genre not found</div>;
+    } else {
+      return track.primary_genres.music_genre_list[0].music_genre
+        .music_genre_name;
+    }
+  };
+
   render() {
-    const { track, lyrics, albumName } = this.state;
+    const { track, lyrics } = this.state;
+    console.log(track, lyrics);
     if (
       track === undefined ||
       lyrics === undefined ||
@@ -67,15 +68,8 @@ class Lyrics extends Component {
 
           <ul className="my-group list-group mt-3">
             <li className="my-list list-group-item">
-              <strong className="my-sub-title">Album Name: </strong>
-              {albumName}
-            </li>
-            <li className="my-list list-group-item">
-              <strong className="my-sub-title" >Song Genre: </strong>
-              {
-                track.primary_genres.music_genre_list[0].music_genre
-                  .music_genre_name
-              }
+              <strong className="my-sub-title">Song Genre: </strong>
+              {this.renderGender(track)}
             </li>
             <li className="my-list list-group-item">
               <strong className="my-sub-title">Explicit Words: </strong>
